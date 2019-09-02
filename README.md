@@ -15,6 +15,27 @@ How it works?
 
 - With this technique it takes 10 mins to backup the same DB and 50 mins to restore - **savings of 9 hours!**
 
+## Usage
+
+```bash
+node dbBackup.js strTables takeProcedure host port userName password dbName target_path fileName
+```
+
+### Example
+
+```bash
+node dbBackup.js \
+  'table1,table2,tableN' \
+  1 \
+  localhost \
+  3306 \
+  root \
+  rootPass \
+  myDb \
+  dump/path \
+  my-dump.sql
+```
+
 ## Follwing dependencies are there for dbBackup.js
 
 - Node.js: http://nodejs.org/
